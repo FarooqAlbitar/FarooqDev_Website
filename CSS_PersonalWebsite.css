@@ -1,0 +1,251 @@
+#headertitles_style
+
+{
+
+color: red;
+font-weight: bold;
+font-family: JF Flat;
+font-size: 20px;
+text-align: center;
+background-color: silver;
+
+}
+
+#centerpage_style
+
+{ 
+
+color: var(--main);
+font-weight: bold;
+font-family: GE SS;
+font-size: 20px;
+text-align: center;
+background-color: #FFFFFF;
+background-size: cover;
+background-image: url("landing.jpg");
+height: calc ( 100vh - (49.25+23)px );
+
+}
+
+#footer_style
+
+{
+font-weight: bold;
+font-family: GE SS;
+font-size: 15px;
+text-align: center;
+background-color: #FFFFFF;
+
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* بعض المتغيرات العامة */
+
+:root {
+	--main: #FF0000;
+	--secondary-color: gray;
+    --section-color: white-gray;	
+	--maind: 0.5s;
+}
+
+/* Scalling Adjustment */
+
+/* small */
+@media (min-width: 768px) {
+	.container {
+		width:750px;
+	}
+}
+	/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+ 
+/* End Scalling Adjustment */
+	
+}
+ 
+
+
+body {
+font-family: GE SS;	
+}
+
+
+.navbar  ul	{ list-style:none;padding:0;margin:0; }
+
+.navbar  ul li { display:inline-block; padding:15px; }
+
+
+.header {
+  padding: 0px;
+}
+
+.header .navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.header .navbar .links ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: #FF0000;
+  right: 0;
+  min-width: 200px;
+  top: calc(100% + 15px);
+  z-index: 1;
+}
+
+
+.header .navbar .links:hover ul {
+  display: inline-block;
+ 
+}
+.header .navbar .links ul li a {
+  display: block;
+  padding: 0px;
+  text-decoration: none;
+  color: #333;
+  transition:  0.5s;
+
+}
+.header .navbar .links ul li a:hover {
+  padding-bottom: 5px;
+  
+}
+
+.header .navbar .links ul li a {
+  border-bottom: 2px solid #eee;
+}
+
+
+
+.navbar 
+
+{
+	
+font-family: GE SS Two;
+font-size: 15px;
+text-align: center;
+background-color: red;
+align-items: center;
+
+}
+
+
+.main .landing-text {
+	
+	position: absolute;
+	text-align: right;
+	bottom: 300px;
+	right: 150px;
+	font-size: 20px;
+	width: 500px;
+	max-width: 100%;
+	
+
+}
+
+.main .services p {
+	display: inline-block;
+	justify-content: center;
+    padding: 5px;
+	margin: 5px;
+	top: 50px;
+	left: 20px;
+	
+	
+}
+.main .portfolio  p {
+ display: inline-block;
+ justify-content: center;
+ padding: 20px;
+ margin: 20px;
+ line-height: 2px;
+}
+
+.main .services .services-sec  {
+height: 5px;
+width: 10px;
+color: #f3f3f3;
+
+}
+
+
+
+.main .portfolio .portfolio-sec {
+
+}
+
+.main .contact-me p {
+	display: flex;
+	justify-content: center;
+    flex-direction: row-reverse;
+    padding: 5px;
+	margin: 5px;
+	
+}
+
+.footer a{
+	
+    margin: 100px;
+}
+	
+
+
+.co { 
+color : gray;
+text-align: center;
+}
+
+
+.img { 
+display: flex;
+position: relative;
+align-items: left;
+height: 500px;
+width: 500px;
+}
+
+.co:hover {
+	color: var(--main);
+	font-weight: bold;
+	font-size: 10px;
+	text-decoration: underline;
+	animation:  5s;
+}
+	 .shape { 
+	  display: flex;
+	  position: absolute;
+	  height: 100px;
+	  width: 50px;
+	  border-radius: 0%;
+	  background-color: red;
+	  align-items: center;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: scaleX(10);
+	  
+	 }
+      .shape:hover { 
+	  
+	  -webkit-transition: transform 2s ease-in;
+	  }
